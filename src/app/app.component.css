@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 20px 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}

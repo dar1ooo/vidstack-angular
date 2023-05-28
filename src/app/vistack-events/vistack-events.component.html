@@ -1,0 +1,89 @@
+<media-player
+  title="Agent 327: Operation Barbershop"
+  src="https://media-files.vidstack.io/hls/index.m3u8"
+  poster="https://media-files.vidstack.io/poster.png"
+  aspect-ratio="16/9"
+  (play)="eventFired('play')"
+  (pause)="eventFired('pause')"
+  (enterFullscreen)="eventFired('enterFullscreen')"
+  (exitFullscreen)="eventFired('exitFullscreen')"
+  (enterPictureInPicture)="eventFired('enterPictureInPicture')"
+  (exitPictureInPicture)="eventFired('exitPictureInPicture')"
+  (seekToLiveEdge)="eventFired('seekToLiveEdge')"
+  (startLoading)="eventFired('startLoading')"
+  (subscribe)="eventFired('subscribe')"
+  (media-player-connect)="eventFired('media-player-connect')"
+  (find-media-player)="eventFired('find-media-player')"
+  (audio-tracks-change)="eventFired('audio-tracks-change')"
+  (autoplay-change)="eventFired('autoplay-change')"
+  (can-load)="eventFired('can-load')"
+  (can-play-through)="eventFired('can-play-through')"
+  (can-play)="eventFired('can-play')"
+  (controls-change)="eventFired('controls-change')"
+  (fullscreen-change)="eventFired('fullscreen-change')"
+  (load-start)="eventFired('load-start')"
+  (playing)="eventFired('playing')"
+  (waiting)="eventFired('waiting')"
+  (hls-lib-loaded)="eventFired('hls-lib-loaded')"
+>
+  <media-buffering-indicator></media-buffering-indicator>
+
+  <media-outlet></media-outlet>
+  <div
+    class="media-controls-container"
+    role="group"
+    aria-label="Media Controls"
+  >
+    <div class="media-controls-group"></div>
+    <div class="media-controls-group"></div>
+    <div class="media-controls-group">
+      <media-play-button aria-keyshortcuts="k Space" />
+      <div class="flex-1"></div>
+      <media-fullscreen-button aria-keyshortcuts="f"></media-fullscreen-button>
+      <media-menu>
+        <media-menu-button aria-label="Settings">
+          <media-icon type="settings" data-rotate></media-icon>
+        </media-menu-button>
+        <media-menu-items>
+          <media-menu>
+            <media-audio-menu-button label="Audio"></media-audio-menu-button>
+            <media-audio-menu-items
+              empty-label="Default"
+            ></media-audio-menu-items>
+          </media-menu>
+          <media-menu>
+            <media-captions-menu-button
+              label="Captions"
+            ></media-captions-menu-button>
+            <media-captions-menu-items
+              off-label="Off"
+            ></media-captions-menu-items>
+          </media-menu>
+          <media-menu>
+            <media-quality-menu-button
+              label="Quality"
+            ></media-quality-menu-button>
+            <media-quality-menu-items
+              auto-label="Auto"
+            ></media-quality-menu-items>
+          </media-menu>
+          <media-menu>
+            <media-playback-rate-menu-button
+              label="Speed"
+            ></media-playback-rate-menu-button>
+            <media-playback-rate-menu-items
+              normal-label="Normal"
+            ></media-playback-rate-menu-items>
+          </media-menu>
+        </media-menu-items>
+      </media-menu>
+    </div>
+  </div>
+</media-player>
+
+<div>
+  <h4>Event fired:</h4>
+  <ul>
+    <li *ngFor="let event of events">{{ event }}</li>
+  </ul>
+</div>
