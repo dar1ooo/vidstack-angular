@@ -39,3 +39,16 @@ media-player[data-ios-controls] .media-controls-group,
 .flex-1 {
   flex: 1 1 0%;
 }
+
+media-player {
+  --media-time-font-size: 13px;
+  --media-time-font-weight: 500;
+  --media-font-family: sans-serif;
+  --media-time-color: inherit;
+  --media-time-bg: unset;
+  --media-time-border-radius: unset;
+}
+
+media-player[data-user-idle]{
+  cursor: none;
+}
