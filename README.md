@@ -15,20 +15,12 @@ Before running the project, ensure that you have the following software installe
 Follow these steps to set up the Angular project:
 
 1. Clone the project repository from GitHub.
-   ```shell
-   git clone https://github.com/yourusername/vidstack-angular.git
-   ```
 
 2. Navigate to the project directory.
-   ```shell
-   cd vidstack-angular
-   ```
-
 3. Install project dependencies using npm.
    ```shell
    npm install
    ```
-
 ## Running the Project
 
 To run the Angular project locally, execute the following command:
