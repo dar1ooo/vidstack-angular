@@ -1,22 +1,36 @@
+<div class="intro">
+  <div class="title">Build your player.</div>
+  <div class="sub-title">
+    UI components and hooks for building media players on the web. Robust,
+    customizable, and accessible. Get Started Components works seamlessly with
+  </div>
+  <div class="actions">
+    <a
+      class="white"
+      href="https://www.vidstack.io/docs/player?styling=default-theme"
+      target="_blank"
+      >Get started</a
+    >
+    <a
+      class="black"
+      href="https://www.vidstack.io/player/components?lib=react"
+      target="_blank"
+      >Components</a
+    >
+  </div>
+</div>
+
 <div class="wrapper">
-  <!-- Custom Controls -->
-  <h1>HLS & Custom controls</h1>
-  <div class="grid">
-    <app-vidstack-custom-controls></app-vidstack-custom-controls>
+  <div class="item">
+    <h1>HLS & Custom controls</h1>
+    <app-vidstack-custom-controls class="player"></app-vidstack-custom-controls>
   </div>
-  <!-- End Custom Controls -->
-
-  <!-- VIDEO -->
-  <h1>Video</h1>
-  <div class="grid">
-    <app-vidstack-video></app-vidstack-video>
+  <div class="item">
+    <h1>Normal MP4</h1>
+    <app-vidstack-video class="player"></app-vidstack-video>
   </div>
-  <!-- End VIDEO -->
-
-  <!-- Events -->
-  <h1>Events</h1>
-  <div class="grid">
-    <app-vistack-events></app-vistack-events>
+  <div class="item">
+    <h1>Events</h1>
+    <app-vistack-events class="player"></app-vistack-events>
   </div>
-  <!-- End Events -->
 </div>
