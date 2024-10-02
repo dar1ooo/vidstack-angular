@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-vistack-events',
   templateUrl: './vistack-events.component.html',
-  styleUrls: ['./vistack-events.component.css'],
+  styleUrls: ['./vistack-events.component.scss'],
 })
 export class VistackEventsComponent {
   public events: string[] = [];
